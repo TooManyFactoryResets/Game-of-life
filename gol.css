@@ -15,7 +15,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 .petritable {
-    height: 50%;
     border: 1px solid #cceeff;
     border-collapse: collapse;
     margin: auto;
@@ -24,16 +23,16 @@
 .deadcell {
     border: 1px solid #cceeff;
     border-collapse: collapse;
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 20px;
     background-color: #e6f7ff;
 }
 
 .alivecell {
     border: 1px solid #cceeff;
     border-collapse: collapse;
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 20px;
     background-color: #006699;
 }
 
