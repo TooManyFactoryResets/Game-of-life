@@ -253,7 +253,11 @@ window.onload = function() {
     var startBtnListener = function() {
         generator.theTable.syncLifeStatusToDrawing();
         intervalId = setInterval(function() { generator.lifeAndDeath(); }, 50);
-        this.setAttribute("disabled", true);
+        this.setAttribute("disabled", false);
+    }
+
+    function pausebutton() {
+        clearInterval(intervalId);
     }
 
     var resetBtnListener = function() {
