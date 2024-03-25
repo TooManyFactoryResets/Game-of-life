@@ -244,8 +244,8 @@ window.onload = function() {
         }
     }
 
-    var petritableWidth = 80;
-    var petritableHeight = 130;
+    var petritableWidth = 20;
+    var petritableHeight = 50;
     var generator = new LifeGen(petritableWidth,petritableHeight);
 
     var intervalId;
