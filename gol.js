@@ -256,7 +256,7 @@ window.onload = function() {
     }
 
     function pausebutton() {
-        clearInterval(intervalId);
+        intervalId = setInterval(function() { generator.lifeAndDeath(); }, 0);
     }
 
     var resetBtnListener = function() {
