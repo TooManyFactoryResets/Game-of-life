@@ -253,7 +253,6 @@ window.onload = function() {
     var startBtnListener = function() {
         generator.theTable.syncLifeStatusToDrawing();
         intervalId = setInterval(function() { generator.lifeAndDeath(); }, 50);
-        this.setAttribute("disabled", false);
     }
 
     function pausebutton() {
@@ -263,7 +262,6 @@ window.onload = function() {
     var resetBtnListener = function() {
         generator.theTable.deletePetritable();
         clearInterval(intervalId);
-        document.getElementById("startBtn").removeAttribute("disabled");
         generator = new LifeGen(petritableWidth,petritableHeight);
     }
 
