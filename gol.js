@@ -255,11 +255,6 @@ window.onload = function() {
         intervalId = setInterval(function() { generator.lifeAndDeath(); }, 50);
     }
 
-    function pausebutton() {
-        clearInterval(intervalId);
-        intervalId = setInterval(function() { generator.lifeAndDeath(); }, 0);
-    }
-
     var resetBtnListener = function() {
         generator.theTable.deletePetritable();
         clearInterval(intervalId);
